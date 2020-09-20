@@ -45,8 +45,8 @@ const DivPopup = styled.div`
 const DivPopupOverlay = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: #000;
-  opacity: 0.3;
+  background-color: gray;
+  opacity: 0.7;
   position: absolute;
   top: 0;
 `
