@@ -4,17 +4,19 @@ import styled from "styled-components"
 interface Props {
   url: string
   className?: string
+  onClick: () => void;
 }
 
 export default class ImagePreview extends React.Component<Props> {
   render() {
     const {
       url,
-      className
+      className,
+      onClick
     } = this.props
 
     return (
-      <DivContainer className={className}>
+      <DivContainer className={className} onClick={() => onClick()}>
         <div
           className="ImagePreview--image"
           style={{backgroundImage: `url(${url})`}}  />
