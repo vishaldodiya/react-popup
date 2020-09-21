@@ -21,7 +21,6 @@ function App() {
     e.stopPropagation()
     if (!showDialog) return;
 
-    console.log(e.keyCode)
     if (e.keyCode === 39) {
       const index = imgIndex >= IMAGE_URLS.length - 1 ? 0 : imgIndex + 1
       setImgIndex(index);

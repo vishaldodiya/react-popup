@@ -18,11 +18,11 @@ export default class Popup extends React.Component<Props> {
     return (
       <>
         {show && (
-          <DivPopup>
-            <DivImageWrapper>
+          <DivPopup className="popup">
+            <DivImageWrapper className="popup__image">
               <Image src={url}></Image>
             </DivImageWrapper>
-            <DivPopupOverlay onClick={() => toggleDialog(!show)}></DivPopupOverlay>
+            <DivPopupOverlay className="popup__overlay" onClick={() => toggleDialog(!show)}></DivPopupOverlay>
           </DivPopup>
         )}
       </>
